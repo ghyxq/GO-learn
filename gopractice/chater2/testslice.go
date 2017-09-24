@@ -11,12 +11,17 @@ func main()  {
 
 	//====================================
 
-	//切片的两种定义方式
-   var ip = []string{"a","b","c"}
+	//1.切片的两种定义方式
+   var ip = []string{"a","b"," c"}
 
    var ip1 []string =[]string{"1","2"}
    ip1 = []string{"3","4"}
 
    fmt.Println(ip)
    fmt.Println(ip1)
+
+   //======make函数定义切片==========
+   var ips = make([]string,100)  //100是默认长度，如果用普通的方式定义的话要写很长的代码
+   //old方式定义
+   //var ips1 = []string{.........},{}里面要写100个
 }
